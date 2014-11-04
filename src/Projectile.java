@@ -1,12 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Cameron
- */
+import javax.swing.JButton;
+
 public class Projectile {
+    JButton projectile;
+    boolean direction;
+    String typeOfProjectile;
+    int speedOfProjectile;
+    
+    public Projectile(boolean d, String tp){
+        projectile = new JButton();
+        direction = d;
+        typeOfProjectile = tp;
+        speedOfProjectile = 10;
+    }
     
 }
