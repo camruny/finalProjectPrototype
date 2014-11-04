@@ -19,7 +19,7 @@ public class gameFrame extends JFrame {
         super("Final Project Prototype");
         
         gp = new gamePanel();
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new BorderLayout());
 	getContentPane().add(gp,"Center");
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
 	setSize (640, 480);

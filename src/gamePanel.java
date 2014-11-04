@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import javax.swing.JPanel;
 
 /*
@@ -11,5 +12,13 @@ import javax.swing.JPanel;
  * @author Cameron
  */
 public class gamePanel extends JPanel {
+    startPanel stp;
     
+    public gamePanel(){
+        
+        setLayout(new BorderLayout());
+        stp = new startPanel();
+        stp.add(stp.startButton);
+        this.add(stp, "North");
+    }
 }
