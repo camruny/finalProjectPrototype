@@ -21,7 +21,6 @@ public class Character
     
     public Character(int width, int height, int speed, int x, int y)
     {
-        //super();
         this.width = width;
         this.height = height;
         this.speed = speed;
