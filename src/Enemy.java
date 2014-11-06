@@ -12,13 +12,13 @@ import javax.swing.JButton;
 
 public class Enemy extends Character{
     
-    public Enemy(){
-       
+    public Enemy(int width, int height, int speed, int x, int y){
+        super(width,height,speed,x,y);
         character = new JButton("Enemy");
-        speed = 0;
-        x = 0;
-        y = 0;
-        width = 0;
-        height = 0;
+        this.speed = speed;
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
     }
 }

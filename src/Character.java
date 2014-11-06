@@ -19,14 +19,15 @@ public class Character
     int x;
     int y;
     
-    public void character(int width, int height, int speed, int x, int y)
+    public Character(int width, int height, int speed, int x, int y)
     {
+        //super();
         this.width = width;
         this.height = height;
         this.speed = speed;
         this.x = x;
         this.y = y;
-        this.character = new JButton();
+        character = new JButton();
     }
     
     public void fireProjectile(int speed, int width, int direction, Projectile p)

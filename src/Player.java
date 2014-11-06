@@ -7,6 +7,10 @@
  *
  * @author Cameron
  */
-public class Player {
+public class Player extends Character{
+    int livesRemaining;
     
+    public Player(int width, int height, int speed, int x, int y){
+        super(width,height,speed,x,y);
+    }
 }

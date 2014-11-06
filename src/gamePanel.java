@@ -1,24 +1,19 @@
-
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Cameron
- */
 public class gamePanel extends JPanel {
     startPanel stp;
+    Player p1;
     
     public gamePanel(){
         
-        setLayout(new BorderLayout());
+        setLayout(null);
         stp = new startPanel();
         stp.add(stp.startButton);
-        this.add(stp, "North");
+        
+        p1 = new Player(5,5,10,50,50);
+        p1.character.setBounds(300,480,50,50);
+        add(p1.character);
+        add(stp);
     }
 }
