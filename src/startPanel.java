@@ -1,4 +1,6 @@
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -12,9 +14,10 @@ import javax.swing.JPanel;
  * @author Cameron
  */
 public class startPanel extends JPanel{
-    JButton startButton;
+  JButton startButton;
     
     public startPanel(){
         startButton = new JButton("Start");
+        add(startButton);
     }
 }

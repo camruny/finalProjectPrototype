@@ -1,19 +1,30 @@
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class gamePanel extends JPanel {
+public class gamePanel extends JPanel implements ActionListener {
     startPanel stp;
-    Player p1;
+    Character char1 = new Character();
+    
     
     public gamePanel(){
-        
-        setLayout(null);
+        super();
+        setLayout(new BorderLayout());
         stp = new startPanel();
-        stp.add(stp.startButton);
+        this.add(stp, "North");
+        stp.startButton.addActionListener(this);
+       
+    }
+    
+    public void actionPerformed(ActionEvent e) {
+        Object obj = e.getSource();
         
-        p1 = new Player(5,5,10,50,50);
-        p1.character.setBounds(300,480,50,50);
-        add(p1.character);
-        add(stp);
+        if (obj==stp.startButton)   {
+            char1.character = new JButton("Character");
+            add(char1.character);
+            
+        }
     }
 }
